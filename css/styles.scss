@@ -17,6 +17,8 @@ $bhromaon-blue: #5474FD;
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
+
 header {
     height: 430px;
     width: 100%;
@@ -94,6 +96,11 @@ header {
                 @include josefin();
                 color: white;
                 cursor: pointer;
+
+                &:hover {
+                    background-color: #37478d;
+                    ;
+                }
             }
         }
 
@@ -185,6 +192,11 @@ header {
                 color: white;
                 font-family: 'Aleo', arial;
                 cursor: pointer;
+
+                &:hover {
+                    background-color: #37478d;
+                    ;
+                }
             }
         }
 
@@ -277,6 +289,11 @@ header {
             font-family: 'Aleo', Arial;
             width: 228px;
             height: 44px;
+
+            &:hover {
+                background-color: #37478d;
+                ;
+            }
         }
     }
 
@@ -307,6 +324,11 @@ header {
             font-family: 'Aleo', Arial;
             width: 228px;
             height: 40px;
+
+            &:hover {
+                background-color: #37478d;
+                ;
+            }
         }
     }
 
@@ -333,7 +355,7 @@ header {
         width: 80%;
 
         .quote-box {
-            padding: 30px;
+
             background-color: #333;
             color: white;
         }
@@ -375,10 +397,19 @@ footer {
         margin: 0;
         padding: 0;
 
-        li:hover {
-            transition: color 0.3s ease;
-            color: $bhromaon-blue;
+        li {
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    transition: color 0.3s ease;
+                    color: $bhromaon-blue;
+                }
+            }
         }
+
+        li:hover {}
     }
 }
 
@@ -413,7 +444,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 30px;
+
     }
 
     .section-4 {
@@ -428,6 +459,6 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 30px;
+
     }
 }
