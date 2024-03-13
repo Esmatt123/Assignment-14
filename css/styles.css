@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aleo&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body,
 html {
   width: 100%;
@@ -349,7 +354,7 @@ header nav a:hover {
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
       grid-template: repeat(24, 1fr)/repeat(6, 1fr);
   width: 100%;
-  height: 660px;
+  height: 297px;
   gap: 10px;
   background: url("/images/ocean.png");
   background-size: contain;
@@ -374,6 +379,102 @@ header nav a:hover {
   font-family: "Aleo", Arial;
   width: 228px;
   height: 40px;
+}
+
+.section-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 731px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(/images/guy-on-cliff.png);
+}
+.section-5 h1 {
+  font-family: "Aleo", Arial;
+  color: white;
+  font-size: 48px;
+}
+.section-5 .testimony {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+}
+.section-5 .testimony .quote-box {
+  padding: 30px;
+  background-color: #333;
+  color: white;
+}
+.section-5 .testimony .quote-mark {
+  font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #5474FD;
+}
+.section-5 .testimony img {
+  width: 245px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333;
+}
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 200px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+footer ul li:hover {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: #5474FD;
 }
 
 @media screen and (min-width: 1440px) {
@@ -412,11 +513,13 @@ header nav a:hover {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding: 30px;
   }
   .section-4 {
     -ms-grid-rows: (1fr)[12];
     -ms-grid-columns: (1fr)[6];
         grid-template: repeat(12, 1fr)/repeat(6, 1fr);
+    height: 600px;
   }
   .section-4__container {
     -ms-grid-column: 4;
@@ -434,5 +537,6 @@ header nav a:hover {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding: 30px;
   }
 }
